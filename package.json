@@ -22,7 +22,6 @@
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "start": "vite",
-    "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
     "test:ember": "vite build --mode test && ember test --path dist"
   },
   "devDependencies": {
@@ -90,7 +89,7 @@
     "webpack": "^5.95.0"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 22"
   },
   "ember": {
     "edition": "octane"
@@ -99,6 +98,7 @@
     "type": "app",
     "version": 2
   },
+  "packageManager": "pnpm@9.12.3",
   "exports": {
     "./tests/*": "./tests/*",
     "./*": "./app/*"
