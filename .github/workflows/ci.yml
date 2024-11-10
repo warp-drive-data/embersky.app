@@ -30,4 +30,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: wyvox/action-setup-pnpm@v3
-      - run: pnpm test
+      - run: pnpm test:ember
