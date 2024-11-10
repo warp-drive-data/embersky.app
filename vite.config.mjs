@@ -25,8 +25,8 @@ const extensions = [
 export default defineConfig(({ mode }) => {
   const embroiderDeps = optimizeDeps();
   embroiderDeps.exclude = embroiderDeps.exclude ?? [];
-  embroiderDeps.exclude.push('!data-worker*');
-  embroiderDeps.exclude.push('!*data-worker');
+  embroiderDeps.exclude.push('!data/workers/data-worker*');
+  embroiderDeps.exclude.push('!*data/workers/data-worker');
 
   return {
     resolve: {
