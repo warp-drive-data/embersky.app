@@ -90,7 +90,7 @@
     "webpack": "^5.95.0"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 22"
   },
   "ember": {
     "edition": "octane"
@@ -99,6 +99,7 @@
     "type": "app",
     "version": 2
   },
+  "packageManager": "pnpm@9.12.3",
   "exports": {
     "./tests/*": "./tests/*",
     "./*": "./app/*"
